@@ -1,5 +1,5 @@
 ---
-layour: post
+layout: post
 title: PCA Implementation in Python
 tags: [unsupervised learning, machine learning]
 readtime: True
