@@ -3,6 +3,7 @@ layout: post
 title: Computational Model of Memory
 subtitle: What is memory and how to make computational model for it?
 tags: [computational neuroscience]
+readtime: True
 ---
 
 ## How do humans store memory?
