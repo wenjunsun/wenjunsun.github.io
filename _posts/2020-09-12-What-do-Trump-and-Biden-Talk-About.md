@@ -1,3 +1,12 @@
+---
+layout: post
+title: What Do Trump And Biden Talk About
+subtitle: extract from speech data to see what each of the presidential candidate like to talk about.
+tags: [topic modeling, unsupervised learning]
+readtime: True
+---
+
+
 In this notebook we will look at what each candidate talks about in their speeches. My expectation is that Biden talks more about environment and race issues and Trump talks more about economics. But we will see if that is really the case.
 
 There are obviously a lot of ways to do topic modeling. In this notebook I will explore two techniques that fall into the realm of matrix decomposition: SVD and NMF.
