@@ -5,9 +5,6 @@ subtitle: What is memory and how to make computational model for it?
 tags: [computational neuroscience]
 ---
 
-1. TOC
-{:toc}
-
 ## How do humans store memory?
 I am always fascinated about the human brain. There are so much that we don't know! One interesting thing I want to investigate is how we store memories and facts.
 There is a famous incident in neuroscience history: people in early 1900's found out there are neurons in the brain that fires that correspond to certain shapes
