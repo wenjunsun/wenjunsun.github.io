@@ -1,4 +1,9 @@
-# Computational Model of Memory
+---
+layout: post
+title: Computational Model of Memory
+subtitle: What is memory and how to make computational model for it?
+tags: [computational neuroscience]
+---
 
 1. TOC
 {:toc}
