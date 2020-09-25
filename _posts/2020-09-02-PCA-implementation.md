@@ -1,4 +1,9 @@
-# PCA implementation
+---
+layour: post
+title: PCA Implementation in Python
+tags: [unsupervised learning, machine learning]
+readtime: True
+---
 
 ## Step 1: create synthetic data (or load your own data)
 In this post for demonstration purposes I will generate very simple dataset for visualization purposes. To do so,
