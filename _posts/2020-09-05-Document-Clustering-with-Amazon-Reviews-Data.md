@@ -1,3 +1,10 @@
+---
+layout: post
+title: Document Clustering with Amazon Reviews Data
+tags: [unsupervised learning, machine learning, topic modeling]
+readtime: True
+---
+
 In this notebook I will explore Amazon's reviews data, and do some clustering analysis - what kind of comments tend to lump together? Maybe I can do some elementary sentiment analysis about which comments are positive and which comments are negative as well. Pretty exciting! Let's get started! This is my first time doing an NLP project, I used to always work with extracting insights from numbers, so let's see how far I can get with doing the same thing twith words and sentences.
 
 This whole notebook is done in Google Colab, which provides 12 GB of RAM and 100 GB hard drive. I don't see a better free platform than Google Colab. But of course you can do all of the following on your own local machine. 
