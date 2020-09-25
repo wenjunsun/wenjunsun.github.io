@@ -7,6 +7,6 @@
 1. consult [this github](https://github.com/daattali/beautiful-jekyll#readme) for more information of how to change my website and add more stuff to it
 2. index.html controls the main page (entry point) of my web.
 3. how to write latex: 
-- $$\LaTeX code$$   (for display)
-- \\[\LaTeX code\\] (also for display)
+- $$\LaTeX code$$   (for inline display)
+- \\[\LaTeX code\\] (stand alone line display)
 - \\(\LaTeX code\\) (for inline)
