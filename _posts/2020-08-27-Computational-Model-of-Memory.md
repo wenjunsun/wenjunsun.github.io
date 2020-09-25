@@ -23,7 +23,7 @@ What is the difference between computer memory and human memory? Well humans can
 ## Spin glass and Hopfield's Genius
 Hopfield was in his heart a physicist. In 1980's he was inspired by a physical system called spin glass, where each element in the system is a little magnet. And every magnet will change its direction based on all the forces it is feeling based on every other magnets. If you have a spin glass and let loose the system, every magnet will change its direction and will finally come to a equilibrium state where no magnet will flip. In this equilibrium state, when one magnet is pointing its direction against the rest of the network, it will flip back. This is sort of like memory, Hopfield thought. When some corrupted signal comes through and some magnets went "rogue", they will be forced by the rest of the network to go back to their "correct" state, the state that minimizes the energy of the whole system. In 1982, Hopfield wrote a paper about this physical system and its implication for systems that can simulate content addressable memories. This network that can remember things that he invented is now called Hopfield network.
 
-![](/images/hopfield-network-example.jpg "An example of how Hopfield Network can remember pattern of digit 3 and successfully recall it given a partial 3 pattern")
+![](/asset/img/hopfield-network-example.jpg "An example of how Hopfield Network can remember pattern of digit 3 and successfully recall it given a partial 3 pattern")
 
 ## The setup and the challenge
 So the setup of the problem is simple: given some bit patterns that represent the memories, can our model remember those patterns, and given some corrupted version of the pattern, recall the correct pattern? For example, if we are given a 25-vector that in 5 x 5 shapes like a letter T, like below:  
@@ -40,7 +40,11 @@ So the setup of the problem is simple: given some bit patterns that represent th
    1, 1, 1, 1, 1],  
    Can we give the correct pattern when given a slightly different T or C shape? 
 
-   {% include info.html text="We choose 1 to represent on neurons and -1 to represent off neurons because if we choose 0 to represent off neurons then Hebbian learning rule (see following for description of Hebbian learning rule) will only increase strengths of connections and never decrease their strengths." %}
+### Notification
+
+{: .box-note}
+**Note:** We choose 1 to represent on neurons and -1 to represent off neurons because if we choose 0 to represent off neurons then Hebbian learning rule (see following for description of Hebbian learning rule) will only increase strengths of connections and never decrease their strengths.
+
 ## Hebbian learning rule
 > Hebb: Neurons that fire together wire together.
 
