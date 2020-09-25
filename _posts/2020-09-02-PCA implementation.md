@@ -20,7 +20,7 @@ X = np.asarray(X)
 ```
 We now have the following data:
 
-![synthetic data](/images/PCA_1.png "synthetic data that has main variation on the diagonal")
+![synthetic data](/assets/img/PCA_1.png "synthetic data that has main variation on the diagonal")
 
 ## Step 2: Standardization (or normalization)
 second step is to standardize data. This just means we want in every dimension data has mean of 0 and variance of 1. The reason we do this is because PCA is sensitive to scale.
@@ -48,7 +48,7 @@ y = [v[0,:][1] * i for i in range(-5,5)]
 plt.plot(x, y, color = 'r')
 ```
 
-![synthetic data](/images/PCA_2.png "check eigenspace")
+![synthetic data](/assets/img/PCA_2.png "check eigenspace")
 
 We can see that the red line is the projected space, which is the axis with most variation. This looks good
 
