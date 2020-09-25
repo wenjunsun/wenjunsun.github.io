@@ -40,8 +40,6 @@ So the setup of the problem is simple: given some bit patterns that represent th
    1, 1, 1, 1, 1],  
    Can we give the correct pattern when given a slightly different T or C shape? 
 
-### Notification
-
 {: .box-note}
 **Note:** We choose 1 to represent on neurons and -1 to represent off neurons because if we choose 0 to represent off neurons then Hebbian learning rule (see following for description of Hebbian learning rule) will only increase strengths of connections and never decrease their strengths.
 
