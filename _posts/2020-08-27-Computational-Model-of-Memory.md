@@ -49,7 +49,10 @@ So the setup of the problem is simple: given some bit patterns that represent th
 Okay, so given two patterns, how does our model remember them? We use the famous Hebbian learning rule. We first design a weight matrix that represent the connection strengths between every neuron and every other neuron. Just like in spin glass, every neuron's firing influences every other neuron's firing, and the strength of the synapse is the importance of that connection. in the remembering phase we want to find the weight matrix such that when we let the network loose it will find the correct pattern. Hebbian learning is just saying the neurons that fire together, wire together. For example, if neuron A and neuron B are both on (their values are both 1), then their connection is strengthened. If neuron A is 1 and neuron B is -1, then their connection is weakened. We do this for every neuron pair in both T shape and C shape vectors. The update rule is given by the following matrix equation:  
 $$
 W(t+1)= W(t) +  \eta(ss^T - I)
-$$  
+$$
+\\(W(t+1)= W(t) +  \eta(ss^T - I)\\)
+$$W(t+1)= W(t) +  \eta(ss^T - I)$$
+\\[W(t+1)= W(t) +  \eta(ss^T - I)\\]
 Where $\eta$ is the learning rate, $s$ is one pattern vector we want to remember. We simply initialize a zero matrix, and do the above update rule for every pattern vector we want to remember. And voila, we will have the weight matrix we want.
 we minus the identity matrix since no neuron connects to itself. the outer product expresses exactly the pairwise products between every pair of neuron that we need. 
 
