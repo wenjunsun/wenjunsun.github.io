@@ -42,13 +42,13 @@ not increase voltage.
 that bind to the surface of the postsynaptic neuron, which in term will increase the current coming in/out of the cell based
 on the nature of the synapse. We model the current contributed by the synapse by its conductance (denoted by $$g_s(t)$$), which is simply how well this synapse conduct electricity. We'll think about this conductance is high when the presynaptic neuron is excited, and low when it is not. The current of a synapse is simply $$g_{s}(t)(V - V_{s})r_{m}$$, where $$V_{s}$$ is the equilibrium potential of this
 synapse. -- for example, if $$V_{s}$$ is very negative, then this synapse is trying to make postsynaptic neuron's voltage more negative,
-and if it is positive, then it is trying to make postsynaptic neuron's voltage more positive. $$r_{m}$$ is the membrane resistance at a unit area. 
+and if it is positive, then it is trying to make postsynaptic neuron's voltage more positive. $$r_{m}$$ is the membrane resistance in a unit area. 
 
 Here is a nice picture of a synapse. 
-[image of a synapse](https://cdn.britannica.com/37/54737-050-013849FC/nerve-impulse-transmission-synapse-arrival-neurotransmitter-release.jpg)
+![image of a synapse](https://cdn.britannica.com/37/54737-050-013849FC/nerve-impulse-transmission-synapse-arrival-neurotransmitter-release.jpg)
 
-Okay, so now we have expressions of all the contributing forces to the change in voltage, we have:
+Okay, so now we have expressions of all the contributing forces to the change in voltage, we can write down the whole differential equation:
 \\[  C\frac {dV}{dt} = -\frac{(V-V_{equilbrium})}{R} + g_{s}(t)(V - V_{s})r_{m} \\]
 
 Now we have a differential equation describing the voltage of a neuron! This is also called a "RC Circuit Model of neuron".
-Hopefully that was not that confusing!
+Hopefully that was not too confusing and hope you had fun reading this article!
