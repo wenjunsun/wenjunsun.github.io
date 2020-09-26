@@ -1,4 +1,9 @@
-## mathematical model of a neuron
+---
+title: Mathematical Model of A Neuron
+subtitle: using differential equation to describe voltage dynamics of a neuron
+readtime: True
+tags: [computational neuroscience]
+---
 First off, what do we mean by a mathematical mode of a neuron? Well to answer that, we first need to think a little bit about what a neuron does.
 Of course what a real neuron does is very complex!!! There are rich dynamics involved, with millions of ion channels on a single neuron. Different
 ion channels transport different ions (which includes potassium, sodium and much more) at different rate. Different ion channels also have different
