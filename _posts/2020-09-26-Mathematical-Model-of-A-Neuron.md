@@ -26,11 +26,29 @@ Now let's differentiate this formula on both sides with respect to time, then we
 \\[ \frac{dQ}{dt} = C\frac{dV}{dt} \\]
  Since $$\frac{dQ}{dt} = I$$, which just means current = change in number of charges with respect to time, we get
 \\[ I = C\frac{dV}{dt} \\]
-So what do we have now? We derived a simple fact: the change in voltage of the cell membrane = the current that comes in to the cell. In other words,
-to model voltage we need to model the incoming current to the cell. How? 
-Well, every neuron has a lot of pumps to keep its resting potential. (neurons work all the time, even when they are not firing!). Since 
-neuron's resting potential is negative, that means neuron is constantly pumping out positive ions (typically sodium ions) to keep its negativity.
-So that is one way current can get out of the cell. the other thing we model is the synapse. Currents come in through the synapse via other
-cell's signaling. factoring those factors and put those inside the above formula we have:
-\\[  C\frac {dV}{dt} = -(Leakage) + synapse + external input current \\]
-\\
+
+So now we derived a simple fact: the voltage across the cell membrane changes when there is electricity current that comes in to the cell. In other words, to model voltage we need to model the incoming current to the cell, which is composed of currents of 
+different ions. 
+
+Okay, now let's try to figure out what kinds of current are coming in/out of the cell. To keep things simple, we'll just model two
+sources of the current -- the ionic pump and the synapse. 
+- what does an ionic pump do? Well, it pumps ions into the cell to keep its resting potential. This just means that if the neuron's
+resting potential is -65 mV, and its current potential is -30 mV, then there are pumps on the neuron that try to restore the voltage
+back to -65 mV, by transporting more positive charges into the cell. We sometimes call this ionic pump the "leakage gate". So the
+current this leakage gate contribute is simply $$-\frac{(V-V_{equilbrium})}{R}$$, by Ohm's law that current = voltage / resistance.
+Minus sign was there because higher the voltage, the more positive ions are coming in, not going out of the cell, which decrease voltage,
+not increase voltage. 
+- what is a synapse? Synapse is the way neurons connect to each other. When the a presynaptic neuron fires, it releases chemicals
+that bind to the surface of the postsynaptic neuron, which in term will increase the current coming in/out of the cell based
+on the nature of the synapse. We model the current contributed by the synapse by its conductance (denoted by $$g_s(t)$$), which is simply how well this synapse conduct electricity. We'll think about this conductance is high when the presynaptic neuron is excited, and low when it is not. The current of a synapse is simply $$g_{s}(t)(V - V_{s})r_{m}$$, where $$V_{s}$$ is the equilibrium potential of this
+synapse. -- for example, if $$V_{s}$$ is very negative, then this synapse is trying to make postsynaptic neuron's voltage more negative,
+and if it is positive, then it is trying to make postsynaptic neuron's voltage more positive. $$r_{m}$$ is the membrane resistance at a unit area. 
+
+Here is a nice picture of a synapse. 
+[image of a synapse](https://cdn.britannica.com/37/54737-050-013849FC/nerve-impulse-transmission-synapse-arrival-neurotransmitter-release.jpg)
+
+Okay, so now we have expressions of all the contributing forces to the change in voltage, we have:
+\\[  C\frac {dV}{dt} = -\frac{(V-V_{equilbrium})}{R} + g_{s}(t)(V - V_{s})r_{m} \\]
+
+Now we have a differential equation describing the voltage of a neuron! This is also called a "RC Circuit Model of neuron".
+Hopefully that was not that confusing!
