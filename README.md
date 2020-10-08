@@ -10,3 +10,6 @@
 - $$\LaTeX code$$   (for inline display)
 - \\[\LaTeX code\\] (stand alone line display)
 - \\(\LaTeX code\\) (for inline)
+4. other people's blogs with blogs:
+- https://github.com/christophM/christophm.github.io
+- https://github.com/cduvallet/cduvallet.github.io
